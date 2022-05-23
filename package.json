@@ -1,0 +1,19 @@
+{
+  "name": "tarikceylan.com",
+  "version": "1.0.0",
+  "description": "Personal Web Page",
+  "main": "app.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "keywords": [
+    "personal",
+    "page"
+  ],
+  "author": "tarikceylan",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "jquery": "^3.6.0"
+  }
+}
