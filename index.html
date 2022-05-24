@@ -63,25 +63,15 @@
   </main>
   
   <script src="/node_modules/jquery/dist/jquery.js"></script>
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/main.js?callback=cb"></script>
   <script src="/assets/js/app.js"></script>
+  <script src="/node_modules/lodash/lodash.js"></script>
 
   <script>
-     cb = function(data) {
-       
-        $('.hobbies').click(() => {
-            data.hobbies.forEach( hobby => {
-              if($('.hobbies-list > li').length < data.hobbies.length) {
-                $('.hobbies-list').append(`<li class="hobbies-list-item list-group-item"> ${hobby}`);
-              } else  {
-                $('.hobbies-list').toggleClass('no-show');
-              }
-            });
-          });
-        }
+ 
   </script>
 
-   <script src="hobbies.js?callback=cb"></script>
+   <script src="hobbies.js"></script>
 
 </body>
 
