@@ -36,8 +36,8 @@
         <p>Hi! My name is <strong>Tarik</strong>. I was born in Amasra, Bartin in 1992.</p> 
         <p>I enjoy camping and traveling during summer. I'm in love with the sea and I love swimming. <p>I'm a nature addict. I like exploring & hiking in forest, spending time with domestic animals and taking care of them whenever possible.</p>
         
-        <button class="hobbies btn-primary">Show Hobbies</button>
-        <ul class="hobbies-list"></ul>
+        <button class="hobbies btn btn-light btn-md">Show Hobbies</button>
+        <ul class="hobbies-list list-group"></ul>
 
       </article>
     </section>
@@ -76,7 +76,7 @@
           
             data.hobbies.forEach( hobby => {
               if($('.hobbies-list > li').length < data.hobbies.length) {
-                $('.hobbies-list').append(`<li class="hobbies-list-item"> ${hobby}`);
+                $('.hobbies-list').append(`<li class="hobbies-list-item list-group-item"> ${hobby}`);
               } else  {
                 $('.hobbies-list').toggleClass('no-show');
               }
