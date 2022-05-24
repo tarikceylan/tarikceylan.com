@@ -25,13 +25,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.1] - 2022-05-24
 ### Added
--src
---app
----index.js
----utils
-----get-data.js
-----ouch.js
-
+```
+src
+|_app
+|__utils
+|___get-data.js
+|___ouch.js
+|_index.js
+```
 
 ### Changed
 -Webpack Integration (//TODO: Loaders)
