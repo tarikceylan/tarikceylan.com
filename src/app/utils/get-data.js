@@ -1,5 +1,4 @@
-let cb = (data) => {
-       
+export const cb = (data) => {
     $('.hobbies').click(() => {
         _.forEach( data.hobbies, (hobby) => {
           if($('.hobbies-list > li').length < data.hobbies.length) {

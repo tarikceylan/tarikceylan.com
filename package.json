@@ -2,9 +2,10 @@
   "name": "tarikceylan.com",
   "version": "1.0.0",
   "description": "Personal Web Page",
-  "main": "app.js",
+  "main": "main.js",
   "scripts": {
-    "test": "run test"
+    "test": "run test",
+    "start": "webpack --config webpack.config.js"
   },
   "keywords": [
     "personal",
@@ -16,5 +17,9 @@
     "bootstrap": "^5.2.0-beta1",
     "jquery": "^3.6.0",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
   }
 }
