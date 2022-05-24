@@ -38,11 +38,8 @@
         
         <button class="hobbies btn btn-light btn-md">Show Hobbies</button>
         <ul class="hobbies-list list-group"></ul>
-
       </article>
     </section>
-
-
     <!-- Past Experience -->
     <section id="experience" class="d-flex justify-content-evenly personal-background">
       <article class="p-3 m-3 bg-light rounded">
@@ -73,7 +70,6 @@
      cb = function(data) {
        
         $('.hobbies').click(() => {
-          
             data.hobbies.forEach( hobby => {
               if($('.hobbies-list > li').length < data.hobbies.length) {
                 $('.hobbies-list').append(`<li class="hobbies-list-item list-group-item"> ${hobby}`);
@@ -83,9 +79,6 @@
             });
           });
         }
-   
-      
-
   </script>
 
    <script src="hobbies.js?callback=cb"></script>
