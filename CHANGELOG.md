@@ -22,3 +22,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -Changed from Vanilla CSS to Bootstrap
 -Changed from Vanilla JS to jQuery
 -Implemented JSONP
+
+## [1.0.1] - 2022-05-24
+### Added
+-src
+--app
+---index.js
+---utils
+----get-data.js
+----ouch.js
+
+
+### Changed
+-Webpack Integration (//TODO: Loaders)
+-Implemented lodash
