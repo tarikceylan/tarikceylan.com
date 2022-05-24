@@ -31,4 +31,8 @@
     .profile-pic {
         max-width: 75vw;
     }
+
+    .nav {
+        display: none;
+    }
 }
