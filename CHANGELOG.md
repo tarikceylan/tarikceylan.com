@@ -35,5 +35,5 @@ src
 ```
 
 ### Changed
-- Webpack Integration (//TODO: Loaders)
+- Webpack Integration. All functions are seperated into their own files. Webpack initiated (TODO: Loaders)
 - Implemented lodash
