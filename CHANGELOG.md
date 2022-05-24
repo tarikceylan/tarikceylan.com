@@ -12,16 +12,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2022-05-23
 ### Added
--CHANGELOG.md
--README.md
--.gitignore
--.editorconfig
+- CHANGELOG.md
+- README.md
+- .gitignore
+- .editorconfig
 
 
 ### Changed
--Changed from Vanilla CSS to Bootstrap
+- Changed from Vanilla CSS to Bootstrap
 -Changed from Vanilla JS to jQuery
--Implemented JSONP
+- Implemented JSONP
 
 ## [1.0.1] - 2022-05-24
 ### Added
@@ -35,5 +35,5 @@ src
 ```
 
 ### Changed
--Webpack Integration (//TODO: Loaders)
--Implemented lodash
+- Webpack Integration (//TODO: Loaders)
+- Implemented lodash
