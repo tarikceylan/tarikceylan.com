@@ -1,4 +1,4 @@
-export const makeHobbies = (data) => {
+export const listHobbies = (data) => {
   $('.hobbies').click(() => {
       _.forEach( data.hobbies, (hobby) => {
         if($('.hobbies-list > li').length < data.hobbies.length) {
