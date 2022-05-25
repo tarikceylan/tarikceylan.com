@@ -1,16 +1,19 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 module.exports = {
     mode: "development",
     entry: "./src/index.js",
     output: {
-        filename: "main.[contenthash].js",
+        filename: "main.js", //TODO: .[contenthash]. will be implemented.
         path: path.resolve(__dirname, "dist"),
     },
-    plugins: [new HtmlWebpackPlugin({
-        template: "./src/template.html",
-        inject: "body"
-    })],
+
+    //TODO:HTML Template Structure will be implemented.
+
+    // plugins: [new HtmlWebpackPlugin({
+    //     template: "./src/template.html",
+    //     inject: "body"
+    // })],
     module: {
         rules: [
             {
