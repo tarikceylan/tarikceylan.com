@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> Go Back</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="container mx-auto">
+        <form id="register-form" novalidate>
+
+            <div class="mb-3">
+              <label for="mail" class="form-label" >Email Address</label>
+              <input type="email" class="form-control" id="mail" placeholder="E-Mail Address">
+              <p class="error-msg"></p>
+            </div>
+
+            <div class="mb-3">
+                <label for="pw" class="form-label" >Password</label>
+                <input type="password" class="form-control" id="pw" placeholder="Password">
+                <p class="error-msg"></p>
+            </div>
+
+            <div class="mb-3">
+                <label for="pw-confirm" class="form-label" >Confirm Password</label>
+                <input type="password" class="form-control" id="pw-confirm" placeholder="Confirm Password">
+                <p class="error-msg"></p>
+              </div>
+
+            <div class="mb-3">
+                <label for="birth-date" class="form-label">Date Of Birth</label>
+                <input type="date" class="form-control" id="birth-date">
+                <p class="error-msg"></p> 
+            </div>
+            <div class="mb-3">
+              <div class="g-recaptcha my-2" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+              <p class="error-msg"></p>
+            </div>
+              
+              <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+            </form>
+      </main>
+</body>
+</html>

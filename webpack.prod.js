@@ -13,7 +13,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({filename: "[name].[fullhash].bundle.css"}),
-     new CleanWebpackPlugin()
+    new CleanWebpackPlugin()
     ],
     module: {
       rules: [

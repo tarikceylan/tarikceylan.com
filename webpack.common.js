@@ -4,24 +4,25 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     main: "./src/index.js",
-    vendor: "./src/vendor.js"
+    vendor: "./src/vendor.js",
+    validate: "./src/validate.js"
   },
 
   plugins: [
     new HtmlWebpackPlugin({
-    template: "./src/template.html",
+    filename: "index.html",
+    template: "./src/templates/home-template.html",
     inject: "body",
-
   }),
     new HtmlWebpackPlugin({
       filename:"register.html",
-      template: "./src/register-template.html",
+      template: "./src/templates/register-template.html",
       inject: "body",
 
   }),
     new HtmlWebpackPlugin({
       filename:"login.html",
-      template: "./src/login-template.html",
+      template: "./src/templates/login-template.html",
       inject: "body",
 
   })
@@ -33,8 +34,8 @@ module.exports = {
         use: ["html-loader"]
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        test: /\.(png|svg|jpg|jpeg|gif|woff)$/i,
+        type: 'asset/resource'
       },
     ]
   }

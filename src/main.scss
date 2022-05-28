@@ -4,6 +4,19 @@ $light: rgb(160, 160, 160);
 $sm-square-frame: 250px;
 $md-square-frame: 500px;
 
+@font-face {
+	font-family: "tarik-ceylan";
+	src: url("./assets/fonts/Exo-Medium.woff");
+}
+
+body {
+	font-family: tarik-ceylan;
+}
+
+.error-msg {
+	color: rgba(255,0,0,1);
+}
+
 .profile-pic {
 	max-width: $sm-square-frame;
 	max-height: $sm-square-frame;
