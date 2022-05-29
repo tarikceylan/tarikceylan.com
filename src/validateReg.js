@@ -19,7 +19,7 @@ form.addEventListener('submit', e => {
     }
 });
 
-form.addEventListener('change', () => {
+form.addEventListener('focusout', () => {
     validateInputs();
 });
 

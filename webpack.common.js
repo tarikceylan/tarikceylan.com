@@ -6,7 +6,8 @@ module.exports = {
     main: "./src/index.js",
     vendor: "./src/vendor.js",
     validateReg: "./src/validateReg.js",
-    validateLog: "./src/validateLog.js"
+    validateLog: "./src/validateLog.js",
+    cookieMan: "./src/cookieManager.js"
   },
 
   plugins: [
