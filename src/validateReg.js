@@ -17,7 +17,6 @@ form.addEventListener('submit', e => {
         validateInputs();
         e.preventDefault();
     }
-
 });
 
 form.addEventListener('change', () => {
@@ -40,7 +39,6 @@ const validateInputs = () => {
         validMail = true;
         showSuccess(email);
     }
-
     //Password Validation
     let pwLength = password.value.length;
     let pwConfirmLength = passwordConfirm.value.length;
@@ -52,13 +50,11 @@ const validateInputs = () => {
     else if(password.value !== "" && (pwLength < 8 || pwLength > 16)) {
         validPw = false;
         showError(password, "*Password must be between 8-16 characters");
-
     }
     else {
         validPw = true;
         showSuccess(password);
     }
-
     //Confirm Password Validation
     if(password.value !== passwordConfirm.value) {
         validPwConfirm = false;
@@ -68,7 +64,6 @@ const validateInputs = () => {
         validPwConfirm = true;
         showSuccess(passwordConfirm)
     }
-
     //Date Validation
     let currDate = new Date();
     let currDay = currDate.getDate();
@@ -83,7 +78,6 @@ const validateInputs = () => {
         validBday = true;  
         showSuccess(birthDate);
     }
-
     //Captcha validation
     let response = grecaptcha.getResponse();
     if(response === "" ) {
@@ -95,7 +89,6 @@ const validateInputs = () => {
         showSuccess(captcha);
     }
 }
-
 
 const showError = (el, msg) => {
     let inputField = el.parentElement;

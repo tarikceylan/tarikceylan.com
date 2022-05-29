@@ -13,13 +13,11 @@ form.addEventListener('submit', e => {
         validateInputs();
         e.preventDefault();
     }
-
 });
 
 form.addEventListener('change', () => {
     validateInputs();
 })
-
 
 const validateInputs = () => {
     //Email Validation
@@ -54,7 +52,6 @@ const validateInputs = () => {
         showSuccess(password);
     }
 
-
     //Captcha validation
     let response = grecaptcha.getResponse();
     if(response === "" ) {
@@ -66,7 +63,6 @@ const validateInputs = () => {
         showSuccess(captcha);
     }
 }
-
 
 const showError = (el, msg) => {
     let inputField = el.parentElement;
