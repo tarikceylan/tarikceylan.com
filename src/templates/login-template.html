@@ -26,14 +26,16 @@
       </nav>
     
       <main class="container mx-auto">
-        <form>
+        <form id="login-form" novalidate method="GET" action="/index.html">
             <div class="mb-3">
-              <label for="inputMail" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="inputMail">
+              <label for="mail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="mail">
+              <p class="error-msg"></p>
             </div>
             <div class="mb-3">
-                <label for="inputPw" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPw">
+                <label for="pw" class="form-label">Password</label>
+                <input type="password" class="form-control" id="pw">
+                <p class="error-msg"></p>
             </div>
 
             <div class="form-check mb-2">
@@ -42,9 +44,11 @@
                 Remember me
               </label>
             </div>
-            
-              <div class="g-recaptcha my-2" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+              <div class="form-check mb-2">
+                <div class="g-recaptcha my-2" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                <p class="error-msg"></p>
+              </div>
+            <button type="submit" class="btn btn-primary">Login</button>
           </form>
       </main>
 </body>

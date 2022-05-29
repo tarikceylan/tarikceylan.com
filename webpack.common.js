@@ -5,24 +5,28 @@ module.exports = {
   entry: {
     main: "./src/index.js",
     vendor: "./src/vendor.js",
-    validate: "./src/validate.js"
+    validateReg: "./src/validateReg.js",
+    validateLog: "./src/validateLog.js"
   },
 
   plugins: [
     new HtmlWebpackPlugin({
     filename: "index.html",
     template: "./src/templates/home-template.html",
+    excludeChunks: ["validateReg", "validateLog"],
     inject: "body",
   }),
     new HtmlWebpackPlugin({
       filename:"register.html",
       template: "./src/templates/register-template.html",
+      excludeChunks: ["validateLog"],
       inject: "body",
 
   }),
     new HtmlWebpackPlugin({
       filename:"login.html",
       template: "./src/templates/login-template.html",
+      excludeChunks: ["validateReg"],
       inject: "body",
 
   })
